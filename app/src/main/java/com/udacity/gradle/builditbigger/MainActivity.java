@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFail() {
-                Toast.makeText(MainActivity.this,"Can't get the joke from the 'jokemaker'. Please try again later.", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,getString(R.string.joke_fail), Toast.LENGTH_LONG).show();
             }
         });
         asyncJoke.execute();
